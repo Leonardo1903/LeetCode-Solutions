@@ -11,6 +11,7 @@ int main()
     while (x != 0)
     {
         int digit = x % 10;
+        // Check for number if within range
         if ((ans > INT_MAX / 10) || (ans < INT_MIN / 10))
         {
             return 0;
