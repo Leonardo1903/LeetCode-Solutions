@@ -5,14 +5,13 @@ using namespace std;
 int main()
 {
     vector<int> nums = {0, 1, 0, 3, 12};
-    int n = nums.size();
-    int i = 0;
-    for (int j = 0; j < n; j++)
+    int nonZero = 0;
+    for (int j = 0; j < nums.size(); j++)
     {
         if (nums[j] != 0)
         {
-            nums[j] = nums[i];
-            i++;
+            swap(nums[nonZero], nums[j]);
+            nonZero++;
         }
     }
     return 0;
