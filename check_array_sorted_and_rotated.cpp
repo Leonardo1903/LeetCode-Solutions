@@ -9,22 +9,19 @@ int main()
     int n = nums.size();
     for (int i = 0; i < n; i++)
     {
-        if (nums[i - 1] > nums[i])
+        if (nums[i] > nums[(i + 1) % n])
         {
             count++;
         }
     }
-    if (nums[n - 1] > nums[0])
-    {
-        count++;
-    }
-    if (count <= 1)
-    {
-        cout << "true";
-    }
-    else
+    if (count > 1)
     {
         cout << "false";
     }
+    else
+    {
+        cout << "true";
+    }
+
     return 0;
 }
