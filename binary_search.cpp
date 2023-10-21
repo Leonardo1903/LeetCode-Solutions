@@ -13,6 +13,7 @@ int main()
     {
         if (nums[mid] == target)
         {
+            cout << "Target found at index " << mid << endl;
             return mid;
         }
         else if (nums[mid] < target)
