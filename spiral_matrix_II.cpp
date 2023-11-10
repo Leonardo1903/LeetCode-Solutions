@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int n = 4;
+    int n = 5;
     vector<vector<int>> generateMatrix(n);
     vector<vector<int>> m(n, vector<int>(n, 0));
     int left = 0, top = 0, right = n - 1, bottom = n - 1;
